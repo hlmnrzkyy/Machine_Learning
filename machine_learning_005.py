@@ -25,8 +25,7 @@ reg = LinearRegression().fit(bedrooms, house_price)
 jumlah_kamar = input("jumlah kamar tidur yang diinginkan: ")
 jumlah_kamar = int(jumlah_kamar)
 harga_kamar = reg.predict(np.array([[jumlah_kamar]]))
-print("harga kamar dengan", jumlah_kamar, "kamar tidur yang diinginkan adalah: $", harga_kamar[0])
-print(reg.predict(np.array([[jumlah_kamar]])))
+print("harga kamar dengan", jumlah_kamar, "kamar tidur yang diinginkan adalah: $", int(harga_kamar[0]))
 
 # show the plot
 plt.show()
