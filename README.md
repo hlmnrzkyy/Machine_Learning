@@ -5,5 +5,6 @@
 # machine_learning_003.py: making a decision tree
 # machine_learning_004.py: calculate the cross validation score and making a decision tree with dummy variables
 # machine_learning_005.py: making a linear regression
-# machine_learning_005.py: making a logistic regression
-# Social_Network_Ads.csv: ascociated with mmachine_learning_005.py
+# machine_learning_006.py: making a logistic regression
+# Social_Network_Ads.csv: ascociated with mmachine_learning_006.py
+# machine_learning_007.py: making a K Nearest Neighbohr (KNN)
