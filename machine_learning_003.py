@@ -8,7 +8,6 @@ from sklearn import tree
 iris = datasets.load_iris()
 print(iris)
 
-
 # membuat model Decision Tree
 tree_model = DecisionTreeClassifier()
 
