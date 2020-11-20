@@ -8,3 +8,4 @@
 # machine_learning_006.py: making a logistic regression
 # Social_Network_Ads.csv: ascociated with mmachine_learning_006.py
 # machine_learning_007.py: making a K Nearest Neighbohr (KNN)
+# machine_learning_008.py: making a decision tree with PCA (Principal Component Analysis)
