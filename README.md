@@ -1,4 +1,4 @@
-- Machine_Learning:
+- Machine_Learning: must using python 3.7 64 bit version
 - machine_learning_000.py: data, normalized data, and standardized data
 - machine_learning_001.py: spliting data for test and for training
 - machine_learning_002.py: calculating the cross validation score
@@ -11,3 +11,7 @@
 - machine_learning_008.py: making a decision tree with PCA (Principal Component Analysis)
 - machine_learning_009.py: SVM tools
 - diabetes.csv: ascociated with "machine_learning_009.py"
+- machine_learning_010.py: neural network
+- messy-vs-clean-room.zip: ascociated with "machine_learning_010.py"
+- link data for messy-vs-clean-room.zip: https://www.kaggle.com/cdawn1/messy-vs-clean-room
+- 1.png: ascociated with "machine_learning_010.py" for testing the script named "machine_learning_010.py"
