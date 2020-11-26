@@ -14,4 +14,4 @@
 - machine_learning_010.py: neural network
 - messy-vs-clean-room.zip: ascociated with "machine_learning_010.py"
 - link data for messy-vs-clean-room.zip: https://www.kaggle.com/cdawn1/messy-vs-clean-room
-- 1.png: ascociated with "machine_learning_010.py" for testing the script named "machine_learning_010.py"
+- 0.png, 1.png, 2.png, ..., 9.png: ascociated with "machine_learning_010.py" for testing the script named "machine_learning_010.py"
