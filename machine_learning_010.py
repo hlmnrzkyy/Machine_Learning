@@ -10,20 +10,20 @@ from PIL import Image
 # melakukan ekstraksi pada file zip
 local_zip = 'messy-vs-clean-room.zip'
 zip_ref = zipfile.ZipFile(local_zip, 'r')
-zip_ref.extractall('/tmp')
+zip_ref.extractall('/PycharmProjects/ML and ANN/tmp')
 zip_ref.close()
 
 base_dir = 'images'
-train_dir = os.path.join(base_dir, '/tmp/images/train')
-validation_dir = os.path.join(base_dir, '/tmp/images/val')
+train_dir = os.path.join(base_dir, '/PycharmProjects/ML and ANN/tmp/images/train')
+validation_dir = os.path.join(base_dir, '/PycharmProjects/ML and ANN/tmp/images/val')
 
 # membuka directory data latih
 print("train image directory:")
-print(os.listdir('/tmp/images/train'))
+print(os.listdir('/PycharmProjects/ML and ANN/tmp/images/train'))
 
 # membuka direktori data validasi
 print("validation image directory:")
-print(os.listdir('/tmp/images/val'))
+print(os.listdir('/PycharmProjects/ML and ANN/tmp/images/val'))
 
 # membuat direktori ruangan rapi pada direktori data training
 train_clean_dir = os.path.join(train_dir, 'clean')
