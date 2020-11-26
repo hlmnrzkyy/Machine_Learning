@@ -93,9 +93,8 @@ from keras.preprocessing import image
 from PIL import Image
 
 filename = "1.png"
-img_file = Image.open(filename)
-
-img = Image.open(img_file, target_size=(150, 150))
+img = Image.open(filename)
+img = img.resize((150, 150))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 
