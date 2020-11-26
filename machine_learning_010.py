@@ -92,19 +92,30 @@ import matplotlib.pyplot as plt
 from keras.preprocessing import image
 from PIL import Image
 
-filename = "1.png"
-img = Image.open(filename)
-img = img.resize((150, 150))
-x = image.img_to_array(img)
-x = np.expand_dims(x, axis=0)
+filename = ["0.png", "1.png", "3.png",
+            "4.png", "5.png", "6.png",
+            "7.png", "8.png", "9.png"]
 
-images = np.vstack([x])
-classes = model.predict(images, batch_size=10)
+for i in range(0, len(filename)):
+    plt.figure(i)
+    img = Image.open(filename[i])
+    img = img.resize((150, 150))
+    x = image.img_to_array(img)
+    x = np.expand_dims(x, axis=0)
 
-if classes == 0:
-    print('clean')
-else:
-    print('messy')
+    images = np.vstack([x])
+    classes = model.predict(images, batch_size=10)
 
-plt.imshow(img)
+    # Menampilkan keterangan pada gambar
+
+    from PIL import ImageFont
+    from PIL import ImageDraw
+
+    if classes == 0:
+        draw = ImageDraw.Draw(img)
+        draw.text((10, 10), "CLEAN", (0, 0, 0))
+    else:
+        draw = ImageDraw.Draw(img)
+        draw.text((10, 10), "MESSY", (0, 0, 0))
+    plt.imshow(img)
 plt.show()
