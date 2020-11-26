@@ -97,7 +97,8 @@ filename = ["0.png", "1.png", "3.png",
             "7.png", "8.png", "9.png"]
 
 for i in range(0, len(filename)):
-    plt.figure(i)
+    plt.figure(1)
+    plt.subplot(3, 3, i+1)
     img = Image.open(filename[i])
     img = img.resize((150, 150))
     x = image.img_to_array(img)
@@ -108,7 +109,6 @@ for i in range(0, len(filename)):
 
     # Menampilkan keterangan pada gambar
 
-    from PIL import ImageFont
     from PIL import ImageDraw
 
     if classes == 0:
